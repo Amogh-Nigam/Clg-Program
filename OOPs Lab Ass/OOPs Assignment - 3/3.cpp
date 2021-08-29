@@ -4,7 +4,7 @@ using namespace std;
 
 long double power(double m, int n = 2)
 {
-    long double pow = 1;
+     long double pow = 1;
     for(int i = 1; i <= n; i++)
         pow = pow * m;
     return pow;
