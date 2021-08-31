@@ -2,14 +2,14 @@
 #include<iostream>
 using namespace std;
 
-inline int cube(int a)
+inline int square(int a)
 {
-    return a * a * a;
+    return a * a;
 }
 int main()
 {
-    cout<<"Cube of Nos. from 1 - 10 are :\n";
+    cout<<"Square of Nos. from 1 - 10 are :\n";
     for(int i = 1 ; i <= 10 ; i++)
-        cout<<"Cube of "<<i<<" is : "<<cube(i)<<endl;
+        cout<<"Square of "<<i<<" is : "<<square(i)<<endl;
     return 0;
 }
