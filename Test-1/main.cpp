@@ -1,6 +1,6 @@
 #include <iostream>
 //#include <stdio.h>
-//#include <algorithm>
+#include <algorithm>
 //#include <bitset>
 //#include <complex>
 //#include <deque>
@@ -31,18 +31,89 @@
 //#include <utility>
 //#include <valarray>
 //#include <vector>
-
+#include <math.h>
 using namespace std;
 
-int main() {
-    cout << "Hello, World!\n";
-    string name = "amogh nigam",na2 = "5";
-    char na[30];
-    cout<<"\n"<<name;
-    cout<<"\n"<<na2;
-    cin.getline(na, 30);
-    cout<<"\n"<<name;
-    cout<<"\n"<<na<<endl;
-     
+class flight
+{
+    int fare;
+    char source[30], destination[30], flight_no[30];
+public:
+    flight()
+    {
+        strcpy(flight_no,"A136-64");
+        strcpy(source,"Delhi");
+        strcpy(destination,"Mumbai");
+        fare = 25000;
+    }
+    void display()
+    {
+        cout<<"\nFlight No. : "<<this->flight_no;
+        cout<<"\nSource : "<<this->source;
+        cout<<"\nDestination : "<<this->destination;
+        cout<<"\nFare : "<<this->fare;
+    }
+    ~flight()
+    {
+        cout<<"destructor is called";
+    }
+};
+
+template <class T>
+class Array
+{
+    int size;
+    T arr[10];
+public:
+    void input()
+    {
+        cout<<"Enter Size of Array : ";
+        cin>>size;
+        for(int i = 0 ; i < size ; i++ )
+        {
+            printf("arr[%d] : ", i);
+            cin>>arr[i];
+        }
+    }
+    void display()
+    {
+        for (int i = 0; i < size - 1; i++)
+            for (int j = size - 1; i < j; j--)
+                if (arr[j] < arr[j - 1])
+                    swap(arr[j], arr[j - 1]);
+        cout <<"\nSorted array : \n";
+            for (int i = 0; i < size; i++)
+                cout << arr[i] <<"  ";
+            cout <<"\n\n";
+    }
+};
+
+template <class T>
+class num
+{
+    T a;
+ 
+public:
+    num(T x)
+    {
+        a = x;
+    }
+ 
+    friend void square_a(num &x)
+    {
+        T sq = x.a*x.a;
+        cout<<"Square of "<<x.a<<" is "<<sq<<"\n\n";
+    }
+};
+
+int main()
+{
+    num<float> A(8.7);
+    square_a(A);
+    Array<float> A1;
+    A1.input();
+    A1.display();
+    flight F1;
+    F1.display();
     return 0;
 }
