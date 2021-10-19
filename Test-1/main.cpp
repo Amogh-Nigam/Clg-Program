@@ -1,5 +1,6 @@
 #include <iostream>
-//#include <stdio.h>
+#include <iomanip>
+#include <stdio.h>
 #include <algorithm>
 //#include <bitset>
 //#include <complex>
@@ -115,5 +116,12 @@ int main()
     A1.display();
     flight F1;
     F1.display();
+    string str = "627 dopr";
+    string str2(10,' '); // string with 10 spaces
+    int x = stoi(str);
+//    sort(arr.begin, arr.end) or arr,arr+size sort woth O(nlogn)
+    float floatk = 32.342342;
+    cout<<"\n"<<setprecision(6)<<setw(10)<<floatk;
+    cout<<endl<<x<<endl<<str2;
     return 0;
 }
