@@ -17,9 +17,8 @@
 #include <cassert>
 #include <array>
 
-#define int long long
 #define MOD 1000000007
-#define int long long
+#define ll long long
 #define pb push_back
 #define ss second
 #define ff first
@@ -36,10 +35,29 @@ void fastio()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 }
+
 int main()
 {
     fastio();
-    
+//    int n;
+//    scanf("%d",&n);
+//    ll ma = 0;
+//    int c = 0;
+//    for(int i = 0 ; i < n ; i++)
+//    {
+//        ll el;
+//        scanf("%lld",&el);
+//        if( el > ma)
+//        {
+//            ma = el;
+//            c = 1;
+//        }
+//        else if( el == ma)
+//        {
+//            c++;
+//        }
+//    }
+//    cout<<c<<endl;
+
     return 0;
 }
-

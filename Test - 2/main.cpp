@@ -17,9 +17,8 @@
 #include <cassert>
 #include <array>
 
-#define int long long
+#define ll long long
 #define MOD 1000000007
-#define int long long
 #define pb push_back
 #define ss second
 #define ff first
@@ -36,10 +35,59 @@ void fastio()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 }
+int gcd(int a, int b)
+{
+    if (b == 0)
+        return a;
+    return gcd(b, a % b);
+}
+
+ll findlcm(vector<int> arr, int n)
+{
+    ll ans = arr[0];
+ 
+    for (int i = 1; i < n; i++)
+        ans = (((arr[i] * ans)) / (gcd(arr[i], ans)));
+ 
+    return ans;
+}
+
 int main()
 {
     fastio();
-    
+    vector<int> a, b;
+    int n,m;
+    cin>>n>>m;
+    for (int i = 0; i < n; i++)
+    {   int num;
+        cin>>num;
+        a.push_back(num);
+    }
+    for (int i = 0; i < m; i++)
+    {
+        int num;
+        cin>>num;
+        b.push_back(num);
+    }
+    ll L = findlcm(a, n);
+    ll count = 0, k = L, flag = 0;
+    while ( k <= 100)
+    {
+        for (int i = 0; i < m; i++)
+        {
+            if ( b[i] % k != 0)
+            {
+                flag = 1;
+                break;
+            }
+        }
+        if (flag == 0) {
+            count++;
+        }
+        k += L;
+        flag = 0;
+    }
+    cout<<count<<endl;
     return 0;
 }
 
