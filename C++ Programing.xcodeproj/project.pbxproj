@@ -10,6 +10,7 @@
 		6309976F26E7CD370032D9BB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6309976E26E7CD370032D9BB /* main.cpp */; };
 		631A69F926F332140021AFAC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 631A69F826F332140021AFAC /* main.cpp */; };
 		632CCB6226E0B922009651F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 632CCB6126E0B922009651F5 /* main.cpp */; };
+		633CD04E274A5E06007E630B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 633CD04D274A5E06007E630B /* main.cpp */; };
 		63699FF1270C547E006BD490 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63699FEF270C547E006BD490 /* main.cpp */; };
 		637262C4271E070E003A85BE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 637262C3271E070E003A85BE /* main.cpp */; };
 		6377DACD272697C400BBCDC9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6377DACC272697C400BBCDC9 /* main.cpp */; };
@@ -47,6 +48,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		632CCB5D26E0B922009651F5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		633CD049274A5E06007E630B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -235,6 +245,8 @@
 		631A69F826F332140021AFAC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		632CCB5F26E0B922009651F5 /* Area Fxn Overloading */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Area Fxn Overloading"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632CCB6126E0B922009651F5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		633CD04B274A5E06007E630B /* OOPs Lab - Library Management System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OOPs Lab - Library Management System"; sourceTree = BUILT_PRODUCTS_DIR; };
+		633CD04D274A5E06007E630B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6348D6EC2618B02C0043E773 /* TEST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TEST; sourceTree = BUILT_PRODUCTS_DIR; };
 		63699FEF270C547E006BD490 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		637262C1271E070E003A85BE /* Test - 2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Test - 2"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -287,6 +299,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		632CCB5C26E0B922009651F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633CD048274A5E06007E630B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,6 +472,14 @@
 			path = "OOPs Lab Assignment - 5";
 			sourceTree = "<group>";
 		};
+		633CD04C274A5E06007E630B /* OOPs Lab - Library Management System */ = {
+			isa = PBXGroup;
+			children = (
+				633CD04D274A5E06007E630B /* main.cpp */,
+			);
+			path = "OOPs Lab - Library Management System";
+			sourceTree = "<group>";
+		};
 		637262C2271E070E003A85BE /* Test - 2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,13 +566,14 @@
 			children = (
 				63959A2026DBCD5E00BB4E51 /* OOPs Lab Ass */,
 				639F3E8127031E7700594DCF /* Class Test OOPs */,
-				639F3E972703DDCC00594DCF /* Test-1 */,
 				63C3753D2715903A00FD4329 /* Class Test OOPs - 2 */,
+				639F3E972703DDCC00594DCF /* Test-1 */,
 				637262C2271E070E003A85BE /* Test - 2 */,
 				637B8C21271EB1E500960D53 /* Test - 3 */,
 				6377DACB272697C400BBCDC9 /* OOPs Exception Handling */,
 				63D6E8E8273944F20099DFD2 /* Friend Class */,
 				63D6E8F3273945FD0099DFD2 /* Teaching Strings */,
+				633CD04C274A5E06007E630B /* OOPs Lab - Library Management System */,
 				63CF7B9725A747B900C27E74 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -575,6 +603,7 @@
 				6377DACA272697C400BBCDC9 /* OOPs Exception Handling */,
 				63D6E8E7273944F20099DFD2 /* Friend Class */,
 				63D6E8F2273945FD0099DFD2 /* Teaching Strings */,
+				633CD04B274A5E06007E630B /* OOPs Lab - Library Management System */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -687,6 +716,23 @@
 			name = "Area Fxn Overloading";
 			productName = "Area Fxn Overloading";
 			productReference = 632CCB5F26E0B922009651F5 /* Area Fxn Overloading */;
+			productType = "com.apple.product-type.tool";
+		};
+		633CD04A274A5E06007E630B /* OOPs Lab - Library Management System */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633CD04F274A5E06007E630B /* Build configuration list for PBXNativeTarget "OOPs Lab - Library Management System" */;
+			buildPhases = (
+				633CD047274A5E06007E630B /* Sources */,
+				633CD048274A5E06007E630B /* Frameworks */,
+				633CD049274A5E06007E630B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OOPs Lab - Library Management System";
+			productName = "OOPs Lab - Library Management System";
+			productReference = 633CD04B274A5E06007E630B /* OOPs Lab - Library Management System */;
 			productType = "com.apple.product-type.tool";
 		};
 		6348D6EB2618B02C0043E773 /* TEST */ = {
@@ -1029,6 +1075,9 @@
 					632CCB5E26E0B922009651F5 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
+					633CD04A274A5E06007E630B = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					6348D6EB2618B02C0043E773 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -1123,6 +1172,7 @@
 				6377DAC9272697C400BBCDC9 /* OOPs Exception Handling */,
 				63D6E8E6273944F20099DFD2 /* Friend Class */,
 				63D6E8F1273945FD0099DFD2 /* Teaching Strings */,
+				633CD04A274A5E06007E630B /* OOPs Lab - Library Management System */,
 			);
 		};
 /* End PBXProject section */
@@ -1149,6 +1199,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				632CCB6226E0B922009651F5 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633CD047274A5E06007E630B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633CD04E274A5E06007E630B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1359,6 +1417,26 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		633CD050274A5E06007E630B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		633CD051274A5E06007E630B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1882,6 +1960,15 @@
 			buildConfigurations = (
 				632CCB6326E0B922009651F5 /* Debug */,
 				632CCB6426E0B922009651F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633CD04F274A5E06007E630B /* Build configuration list for PBXNativeTarget "OOPs Lab - Library Management System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633CD050274A5E06007E630B /* Debug */,
+				633CD051274A5E06007E630B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
