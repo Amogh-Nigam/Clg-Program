@@ -12,7 +12,7 @@
 #include <string.h>
 #include <iomanip>
 using namespace std;
-
+// Made in Mac OS so pl change to "cls" running on Windows
 void clrscr(void)
 {
        system("clear");
@@ -493,7 +493,7 @@ void book_issue()
                     cout << "Book no does not exist";
             }
             else
-                cout << "You have not returned the last book ";
+                cout << "You have not returned the last book";
         }
     }
     if (found == 0)

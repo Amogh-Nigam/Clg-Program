@@ -1,4 +1,4 @@
-// AMOGH NIGAM 2K20/CO/64 In-Line Function
+// AMOGH NIGAM 2K20/CO/64 Passing Parameters in Function
 #include<iostream>
 using namespace std;
 
